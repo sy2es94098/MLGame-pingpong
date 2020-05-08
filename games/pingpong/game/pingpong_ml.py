@@ -68,9 +68,8 @@ class PingPong:
                 print("Frame: {}, Status: {}"
                     .format(scene_info["frame"], game_status.value))
 
-                if self._game_over(game_status):
-                    break
-
+                #if self._game_over(game_status):    
+                #    break
                 self._scene.reset()
                 self._frame_delayed = [0, 0]
                 # Wait for ml processes doing their resetting jobs
